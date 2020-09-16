@@ -9,12 +9,38 @@
 .fnd .facility a.phone {
   width: calc(100% - 35px);
 }
-.facility .ico, #filters .ico {
+/* .facility .ico, #filters .ico {
   float: left;
   width: 18px;
   height: 18px;
   border-radius: 50%;
   margin-right: 3px;
+} */
+
+.facility .ico, #filters .ico {
+  float: left;
+  border-radius: 50%;
+}
+.facility .ico {
+  width: 18px;
+  height: 18px;
+  margin-right: 3px;
+}
+#filters .ico {
+  margin: 8px 3px 10px 3px;
+  width: 12px;
+  height: 12px;
+}
+.translated-rtl .dtl ul {
+  margin: 5px;
+}
+.translated-rtl .name .ico {
+  float: right;
+  margin-left: 3px;
+}
+.translated-rtl #filters .ico {
+  margin: 8px 5px 10px 5px;
+  float: right;
 }
 
 .fnd #banner, .fnd #banner * {
@@ -63,20 +89,6 @@
   background-repeat: no-repeat;
   background-position: 3px 5px;
   padding-left: 30px;
-}
-#filters .ico {
-  margin: 8px 5px 10px -5px;
-}
-.translated-rtl .dtl ul {
-  margin: 5px;
-}
-.translated-rtl .name .ico {
-  float: right;
-  margin-left: 3px;
-}
-.translated-rtl #filters .ico {
-  margin: 8px -5px 10px 5px;
-  float: right;
 }
 .translated-rtl .pop>.content .name {
   padding-right: initial;
