@@ -1,6 +1,6 @@
 {
   "name": "cooling-center",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "description": "Cooling Center",
   "main": "index.js",
   "scripts": {
@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cchendoitt/cooling-center.git"
+    "url": "git+https://github.com/CityOfNewYork/cooling-center.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cchendoitt/cooling-center/issues"
+    "url": "https://github.com/CityOfNewYork/cooling-center/issues"
   },
-  "homepage": "https://github.com/cchendoitt/cooling-center#readme",
+  "homepage": "https://github.com/CityOfNewYork/cooling-center#readme",
   "dependencies": {
     "jquery": "^3.3.1",
     "nyc-lib": "^1.4.40",
