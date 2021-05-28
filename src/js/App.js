@@ -99,8 +99,8 @@ class App extends FinderApp {
     $(labels[1]).addClass('acc_only')
   }
   translateBtn() {
-    new Translate({
-      target: 'body',
+    return new Translate({
+      target: '#map',
       languages: message.languages,
       messages: message.messages,
       button: true
