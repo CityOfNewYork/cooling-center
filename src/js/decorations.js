@@ -119,7 +119,11 @@ const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 
       .append(this.getName())
   },
   getPhone() {
-    return this.get('PHONE')
+    const phone = this.get('PHONE').trim().toLowerCase()
+    if (phone && phone !== 'unavailable') {
+      return phone
+    } else 
+    return ''
   },
   getStatus() {
     return this.get('STATUS')
