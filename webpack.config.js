@@ -34,7 +34,8 @@ module.exports = require('nyc-build-helper').config.defaultWebpackConfig(
   {
       copyOptions: [
         'src/inactive.html', 
-        'src/311.html', 
+        'src/311.html',
+        {from: 'src/311/index.html', to: '311/'},
         {from: 'src/css/311.css', to: 'css'}
       ],
       replaceOptions
