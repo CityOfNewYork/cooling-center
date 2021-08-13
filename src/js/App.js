@@ -74,6 +74,14 @@ class App extends FinderApp {
             {name: 'HANDICAP_ACCESS', values: ['Yes', 'No'], label: 'All Centers', checked: true},
             {name: 'HANDICAP_ACCESS', values: ['Yes'], label: 'Accessible Only'}
           ]
+        },
+        {
+          title: 'Pet Friendly',
+          toggle: true,
+          choices: [
+            {name: 'PET_FRIENDLY', values: ['YES', 'NO'], label: 'All Centers', checked: true},
+            {name: 'PET_FRIENDLY', values: ['YES'], label: 'Pet Friendly Only'}
+          ]
         }
       ],
       refresh: {
@@ -91,6 +99,7 @@ class App extends FinderApp {
       this.fetchIconUrl(iconurl)
     }
     $('.desc').append($('.filter-chc-1'))
+    $('.desc').append($('.filter-chc-2'))
     $('.filter-1').remove()
   }
   addLangClasses() {
