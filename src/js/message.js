@@ -29,6 +29,7 @@ messages.en = {
 	pop_hours: "Hours",
 	pop_extended: "Extended Hours",
 	pop_access: "Wheelchair Accessible",
+	pop_pet: "Pet Friendly",
   day: "Day",
 	opens: "Opens",
 	closes: "Closes",

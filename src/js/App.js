@@ -79,8 +79,8 @@ class App extends FinderApp {
           title: 'Pet Friendly',
           toggle: true,
           choices: [
-            {name: 'PET_FRIENDLY', values: ['YES', 'NO'], label: 'All Centers', checked: true},
-            {name: 'PET_FRIENDLY', values: ['YES'], label: 'Pet Friendly Only'}
+            {name: 'PET_FRIENDLY', values: ['Yes', 'No'], label: 'All Centers', checked: true},
+            {name: 'PET_FRIENDLY', values: ['Yes'], label: 'Pet Friendly Only'}
           ]
         }
       ],

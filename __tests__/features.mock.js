@@ -32,7 +32,8 @@ const center1Source = {
   Y: 254661,
   CTYPE: 1,
   FACILITY_TYPE: 'Library',
-  Entrance_info: ''
+  Entrance_info: '',
+  PET_FRIENDLY: 'Yes'
 }
 const closedCenterSource = {
   OBJECTID: 99,

@@ -38,6 +38,9 @@ const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 
   getAccessible() {
     return this.get('HANDICAP_ACCESS')
   },
+  getPetFriendly() {
+    return this.get('PET_FRIENDLY')
+  },
   getAddress1() {
     return this.get('ADDRESS')
   },
@@ -113,10 +116,16 @@ const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 
     }
     return this.iconClass()
   },
+  getPetIcon() {
+    if (this.getPetFriendly() === 'Yes') {
+      return $('<div class="ico pet"></div>')
+    }
+  },
   nameHtml() {
     return $('<h3 class="name" translate="no" notranslate></h3>')
-      .append(this.getIcon())
-      .append(this.getName())
+    .append(this.getIcon())
+    .append(this.getPetIcon())
+    .append(this.getName())
   },
   getPhone() {
     const phone = this.get('PHONE').trim().toLowerCase()
@@ -153,12 +162,13 @@ const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 
       "Hours may be extended during a heat emergency.": 'msg_extended',
     }
     
-    const type = `<li><b><span class=pop_type>${msgs['pop_type']}</span>: </b><span class=${typeMap[this.getType()]}></span></li>`
-    const address = `<li><b><span class=pop_address>${msgs['pop_address']}</span>: </b><div class="notranslate">${this.getAddress1()}</div></li>`
-    const phone = this.getPhone() !== '' ? `<li><b><span class=pop_phone>${msgs['pop_phone']}</span>: </b><div class="notranslate">${this.getPhone()}</div></li>` : ''
-    const hours = $(`<li><b><span class=pop_hours>${msgs['pop_hours']}</span>: </b></li>`).append(this.getHours())
-    const exHours = this.getExHours() !== '' ? `<li><b><span class=pop_extended>${msgs['pop_extended']}</span>: </b><span class=${otherMap[this.getExHours()]}></span></li>` : ''
-    const access = this.getAccessible() !== '' ? `<li><b><span class=pop_access>${msgs['pop_access']}</span>: </b><span class=${otherMap[this.getAccessible()]}></span></li>` : ''
+    const type = `<li><b><span class="pop_type">${msgs['pop_type']}</span>: </b><span class="${typeMap[this.getType()]}"></span></li>`
+    const address = `<li><b><span class="pop_address">${msgs['pop_address']}</span>: </b><div class="notranslate">${this.getAddress1()}</div></li>`
+    const phone = this.getPhone() ? `<li><b><span class="pop_phone">${msgs['pop_phone']}</span>: </b><div class="notranslate">${this.getPhone()}</div></li>` : ''
+    const hours = $(`<li><b><span class="pop_hours">${msgs['pop_hours']}</span>: </b></li>`).append(this.getHours())
+    const exHours = this.getExHours() ? `<li><b><span class="pop_extended">${msgs['pop_extended']}</span>: </b><span class=${otherMap[this.getExHours()]}></span></li>` : ''
+    const access = this.getAccessible() ? `<li><b><span class="pop_access">${msgs['pop_access']}</span>: </b><span class="${otherMap[this.getAccessible()]}"></span></li>` : ''
+    const pet = this.getPetFriendly() ? `<li><b><span class="pop_pet">${msgs['pop_pet']}</span>: </b><span class="${otherMap[this.getPetFriendly()]}"></span></li>` : ''
     
     ul.append(type)
     .append(address)
@@ -166,6 +176,7 @@ const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 
     .append(hours)
     .append(exHours)
     .append(access)
+    .append(pet)
 
     return div.append(ul)
   },
