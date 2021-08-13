@@ -103,9 +103,11 @@ class App extends FinderApp {
     $('.filter-1').remove()
   }
   addLangClasses() {
-    const labels = this.filters.choiceControls[1].find('label')
-    $(labels[0]).addClass('acc_all')
-    $(labels[1]).addClass('acc_only')
+    const acc_labels = this.filters.choiceControls[1].find('label')
+    $(acc_labels[0]).addClass('acc_all')
+    $(acc_labels[1]).addClass('acc_only')
+    const pet_labels = this.filters.choiceControls[2].find('label')
+    $(pet_labels[1]).addClass('pop_pet')
   }
   translateBtn() {
     return new Translate({
