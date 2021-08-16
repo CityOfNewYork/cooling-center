@@ -203,3 +203,12 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+@media only screen and (max-width : 330px) {
+  .fnd #tabs .btns .btn-2.filtered:before {
+    width: 18px;
+    height: 18px;
+    background-size: 16px;
+    margin: -3px 5px -3px 3px;
+  }
+}
