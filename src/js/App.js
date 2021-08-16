@@ -108,6 +108,7 @@ class App extends FinderApp {
     $(acc_labels[0]).addClass('acc_all')
     $(acc_labels[1]).addClass('acc_only')
     const pet_labels = this.filters.choiceControls[2].find('label')
+    $(pet_labels[0]).addClass('acc_all')
     $(pet_labels[1]).addClass('pop_pet')
   }
   translateBtn() {
