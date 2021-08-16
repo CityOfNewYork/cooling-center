@@ -101,6 +101,7 @@ class App extends FinderApp {
     $('.desc').append($('.filter-chc-1'))
     $('.desc').append($('.filter-chc-2'))
     $('.filter-1').remove()
+    $('.filter-2').remove()
   }
   addLangClasses() {
     const acc_labels = this.filters.choiceControls[1].find('label')
