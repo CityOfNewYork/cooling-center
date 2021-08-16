@@ -419,6 +419,14 @@ describe('addLangClasses', () => {
           {name: 'HANDICAP_ACCESS', values: ['Yes', 'No'], label: 'All Centers', checked: true},
           {name: 'HANDICAP_ACCESS', values: ['Yes'], label: ' Accessible Only'}
         ]
+      },
+      {
+        title: 'Pet Friendly',
+        toggle: true,
+        choices: [
+          {name: 'PET_FRIENDLY', values: ['Yes', 'No'], label: 'All Centers', checked: true},
+          {name: 'PET_FRIENDLY', values: ['Yes'], label: 'Pet Friendly Only'}
+        ]
       }
     ]
   }
@@ -429,19 +437,27 @@ describe('addLangClasses', () => {
     target.remove()
   })
   test('addLangClasses', () => {
-    expect.assertions(2)
+    expect.assertions(3)
 
     const app = new App(mockContent) 
 
     app.addLangClasses = addLangClasses
 
     app.filters = new Filters(filterOptions)
-    const filter = app.filters.choiceControls[1]
-    app.addLangClasses()
-    const labels = filter.find('label')
+    const acc_filter = app.filters.choiceControls[1]
+    const pet_filter = app.filters.choiceControls[2]
 
-    expect($(labels[1]).hasClass('acc_only')).toBe(true)
-    expect($(labels[0]).hasClass('acc_all')).toBe(true)
+    app.addLangClasses()
+    const acc_labels = acc_filter.find('label')
+    const pet_labels = pet_filter.find('label')
+
+    expect($(acc_labels[1]).hasClass('acc_only')).toBe(true)
+    expect($(acc_labels[0]).hasClass('acc_all')).toBe(true)
+    
+    expect($(pet_labels[1]).hasClass('pop_pet')).toBe(true)
+
+
+    
   })
 })
 
