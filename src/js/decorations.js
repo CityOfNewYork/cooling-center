@@ -11,6 +11,12 @@ const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 
   HOURS_TABLE: HOURS_TABLE,
   DAYS: DAYS,
   extendFeature() {
+    if (!this.get('HANDICAP_ACCESS').trim()) {
+      this.set('HANDICAP_ACCESS', 'No')
+    }
+    if (!this.get('PET_FRIENDLY').trim()) {
+      this.set('PET_FRIENDLY', 'No')
+    }
     if (this.get('STATUS') !== 'OPEN') {
       closedFeatures.push(this)
     }
@@ -167,8 +173,8 @@ const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 
     const phone = this.getPhone() ? `<li><b><span class="pop_phone">${msgs['pop_phone']}</span>: </b><div class="notranslate">${this.getPhone()}</div></li>` : ''
     const hours = $(`<li><b><span class="pop_hours">${msgs['pop_hours']}</span>: </b></li>`).append(this.getHours())
     const exHours = this.getExHours() ? `<li><b><span class="pop_extended">${msgs['pop_extended']}</span>: </b><span class=${otherMap[this.getExHours()]}></span></li>` : ''
-    const access = this.getAccessible() ? `<li><b><span class="pop_access">${msgs['pop_access']}</span>: </b><span class="${otherMap[this.getAccessible()]}"></span></li>` : ''
-    const pet = this.getPetFriendly() ? `<li><b><span class="pop_pet">${msgs['pop_pet']}</span>: </b><span class="${otherMap[this.getPetFriendly()]}"></span></li>` : ''
+    const access = `<li><b><span class="pop_access">${msgs['pop_access']}</span>: </b><span class="${otherMap[this.getAccessible()]}"></span></li>`
+    const pet = `<li><b><span class="pop_pet">${msgs['pop_pet']}</span>: </b><span class="${otherMap[this.getPetFriendly()]}"></span></li>`
     
     ul.append(type)
     .append(address)
