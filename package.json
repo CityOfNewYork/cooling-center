@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "build": "webpack",
-    "prebuild": "yarn roll-css",
+    "prebuild": "yarn test && yarn roll-css",
     "postbuild": "node replaceUrl",
     "roll-css": "./node_modules/nyc-lib/css/roll-css.sh ./src/css/cooling-center.theme.css ./src/css/cooling-center.css",
     "predeploy": "yarn build",
@@ -24,6 +24,7 @@
   "homepage": "https://github.com/CityOfNewYork/cooling-center#readme",
   "dependencies": {
     "jquery": "^3.3.1",
+    "nyc-build-helper": "^0.0.40",
     "nyc-lib": "^1.4.43",
     "ol": "^6.5.0",
     "papaparse": "^5.3.0",
@@ -41,7 +42,6 @@
     "jest": "^24.8.0",
     "jest-canvas-mock": "^2.2.0",
     "jest-fetch-mock": "^2.1.2",
-    "nyc-build-helper": "^0.0.39",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
   },
@@ -68,7 +68,6 @@
     "**/**/postcss": "^8.2.10",
     "**/**/elliptic": "^6.5.4",
     "**/**/browserslist": "^4.16.5",
-    "**/**/jszip": "^3.7.0",
     "**/**/glob-parent": "^5.1.2"
   }
 }

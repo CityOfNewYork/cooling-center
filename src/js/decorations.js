@@ -11,12 +11,6 @@ const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 
   HOURS_TABLE: HOURS_TABLE,
   DAYS: DAYS,
   extendFeature() {
-    if (!this.get('HANDICAP_ACCESS').trim()) {
-      this.set('HANDICAP_ACCESS', 'No')
-    }
-    if (!this.get('PET_FRIENDLY').trim()) {
-      this.set('PET_FRIENDLY', 'No')
-    }
     if (this.get('STATUS') !== 'OPEN') {
       closedFeatures.push(this)
     }
@@ -41,11 +35,17 @@ const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 
   cssClass() {
     return `${this.getType()}-${this.getAccessible()}`.replace(/ /g, '-').toLowerCase()
   },
+  getYesNo(yesNo) {
+    if (yesNo === 'Yes') {
+      return 'Yes'
+    }
+    return 'No'
+  },
   getAccessible() {
-    return this.get('HANDICAP_ACCESS')
+    return this.getYesNo(this.get('HANDICAP_ACCESS'))
   },
   getPetFriendly() {
-    return this.get('PET_FRIENDLY')
+    return this.getYesNo(this.get('PET_FRIENDLY'))
   },
   getAddress1() {
     return this.get('ADDRESS')

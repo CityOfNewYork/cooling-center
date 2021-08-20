@@ -56,7 +56,8 @@ const closedCenterSource = {
   Y: 160188,
   CTYPE: 2,
   FACILITY_TYPE: 'Senior Center',
-  Entrance_info: ''
+  Entrance_info: '',
+  PET_FRIENDLY: ''
 }
 
 const center1 = csvPoint.readFeature(center1Source)
