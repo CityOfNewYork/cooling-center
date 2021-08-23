@@ -72,7 +72,7 @@ class App extends FinderApp {
           toggle: true,
           choices: [
             {name: 'HANDICAP_ACCESS', values: ['Yes', 'No'], label: 'All Centers', checked: true},
-            {name: 'HANDICAP_ACCESS', values: ['Yes'], label: 'Accessible Only'}
+            {name: 'HANDICAP_ACCESS', values: ['Yes'], label: 'Accessible'}
           ]
         },
         {
@@ -80,7 +80,7 @@ class App extends FinderApp {
           toggle: true,
           choices: [
             {name: 'PET_FRIENDLY', values: ['Yes', 'No'], label: 'All Centers', checked: true},
-            {name: 'PET_FRIENDLY', values: ['Yes'], label: 'Pet Friendly Only'}
+            {name: 'PET_FRIENDLY', values: ['Yes'], label: 'Pet Friendly'}
           ]
         }
       ],
