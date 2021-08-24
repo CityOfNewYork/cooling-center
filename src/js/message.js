@@ -47,7 +47,7 @@ messages.en = {
 messages.zh = {
 	cc_title: "尋找紐約市避暑中心",
 	btn_cooling_centers: '避暑中心',
-	panel_note: '<p>紐約市在設有空調的公共設施中為在熱浪中感到不適的民眾開設避暑中心。</p><p>若要尋找一個避暑中心，只需在地圖左上角的搜索框中輸入您的地址或街道交叉點，再按下"Enter"鍵，或放大和平移地圖到您的鄰里位置。</p><p>若要搜尋或查詢無障礙設施的中心，請按下方的「僅限無障礙設施」按鈕；點選「所有中心」切換回所有中心的搜尋或查詢狀態。 </p><p>若要搜尋或查詢可允許寵物的中心，請按下方的「僅限允許寵物」按鈕；點選「所有的中心」切換回所有中心的搜尋或查詢狀態。</p><p><b>注意：</b> 請每天檢查本網站。避暑中心可能會改變開放時間。</p><p><a href="http://www1.nyc.gov/site/em/ready/extreme-heat.page" target="_blank">進一步了解保持涼爽的各種方式。</a></p>',
+	panel_note: '<p>紐約市在設有空調的公共設施中，為在熱浪中感到不適的民眾開設避暑中心。</p><p>若要尋找一個避暑中心，只需在地圖左上角的搜索框中輸入您的地址或街道交叉點，再按下""Enter""鍵，或放大和平移地圖到您的鄰里位置。</p><p>若要搜尋或查詢無障礙設施的中心，請按下方的「僅限無障礙設施」按鈕；點選「所有中心」切換回所有中心的搜尋或查詢狀態。</p><p>若要搜尋或查詢可允許寵物的中心，請按下方的「僅限允許寵物」按鈕；點選「所有的中心」切換回所有中心的搜尋或查詢狀態。 </p><p><b>注意：</b> 請每天檢查本網站。避暑中心可能會改變開放時間。</p><p><a href="http://www1.nyc.gov/site/em/ready/extreme-heat.page" target="_blank">進一步了解保持涼爽的各種方式。</a></p>',
 	acc_all: "所有中心",
 	acc_only: "無障礙設施",
 	btn_legend: '說明',
@@ -82,7 +82,7 @@ messages.zh = {
 messages.fr = {
 	cc_title: "Centres de rafraîchissement",
 	btn_cooling_centers: 'Centres de<br>rafraîchissement',
-	panel_note: "<p>La ville de New York ouvre des centres de rafraîchissement dans des locaux publics climatisés pour les personnes éprouvées par la chaleur</p><p>Pour trouver un centre de rafraîchissement, tapez simplement votre adresse ou intersection de rues dans le champ de recherche du coin supérieur gauche de la carte, puis appuyez sur « Enter » (Saisir) ; ou effectuez un zoom et déplacez la carte vers votre quartier.</p><p>Pour rechercher ou afficher les centres accessibles, cliquez sur le bouton « Accessible » (pour personnes handicapées) ci-dessous ; cliquez sur « Tous les centres » pour revenir à la recherche de tous les centres. </p><p>Pour rechercher ou afficher uniquement les centres accessibles aux animaux de compagnie, cliquez sur le bouton « Animaux de compagnie autorisés » ci-dessous ; cliquez sur « Tous les centres » pour revenir à la recherche de tous les centres. </p><p><b>REMARQUE :</b> Revenez sur ce site quotidiennement. Les heures d’ouverture des centres de rafraîchissements peuvent varier.</p><p><a href='http://www1.nyc.gov/site/em/ready/extreme-heat.page' target='_blank'>En savoir plus sur les moyens de rester au frais.</a></p>",
+	panel_note: "<p>La ville de New York ouvre des centres de rafraîchissement dans des locaux publics climatisés pour les personnes éprouvées par la chaleur.</p><p>Pour trouver un centre de rafraîchissement, tapez simplement votre adresse ou intersection de rues dans le champ de recherche du coin supérieur gauche de la carte, puis appuyez sur « Enter » (Saisir) ; ou effectuez un zoom et déplacez la carte vers votre quartier.</p><p>Pour rechercher ou afficher les centres accessibles, cliquez sur le bouton « Accessible » (pour personnes handicapées) ci-dessous ; cliquez sur « Tous les centres » pour revenir à la recherche de tous les centres. </p><p>Pour rechercher ou afficher uniquement les centres accessibles aux animaux de compagnie, cliquez sur le bouton « Animaux de compagnie autorisés » ci-dessous ; cliquez sur « Tous les centres » pour revenir à la recherche de tous les centres. </p><p><b>REMARQUE :</b> Revenez sur ce site quotidiennement. Les heures d’ouverture des centres de rafraîchissements peuvent varier.</p><p><a href='http://www1.nyc.gov/site/em/ready/extreme-heat.page' target='_blank'>En savoir plus sur les moyens de rester au frais.</a></p>",
 	acc_all: "Tous les centres",
 	acc_only: "Accessible", 
 	btn_legend: 'Légende',
@@ -294,7 +294,7 @@ messages.pl = {
 messages.ru = {
 	cc_title: "Поиск центров охлаждения",
 	btn_cooling_centers: 'Центры<br>охлаждения',
-	panel_note: '<p>В Нью-Йорке открываются центры охлаждения в кондиционированных общественных зданиях для тех, кто испытывает физический дискомфорт в период сильной жары. </p><p>Чтобы найти центр охлаждения, введите ваш адрес или перекресток в поисковую строку в верхнем левом углу карты и нажмите клавишу ввода; либо увеличьте изображение и найдите на карте ваш район.</p><p>Для поиска или просмотра центров, доступных для лиц с ограниченными возможностями, нажмите ниже кнопку «Доступные»; чтобы вернуться к просмотру всех центров, нажмите кнопку «Все центры».</p><p>Для поиска или просмотра центров, где разрешены домашние животные, нажмите ниже кнопку «Допускаются домашние животные»; чтобы вернуться к просмотру всех центров, нажмите кнопку «Все центры». </p><p><strong>ПРИМЕЧАНИЕ:</strong> Проверяйте этот сайт ежедневно. Часы работы центров охлаждения могут измениться. </p><p><a href="http://www1.nyc.gov/site/em/ready/extreme-heat.page" target="_blank">Узнайте о том, как избежать перегревания.</a></p>',
+	panel_note: '<p>В Нью-Йорке открываются центры охлаждения в кондиционированных общественных зданиях для тех, кто испытывает физический дискомфорт в период сильной жары.</p><p>Чтобы найти центр охлаждения, введите ваш адрес или перекресток в поисковую строку в верхнем левом углу карты и нажмите клавишу ввода; либо увеличьте изображение и найдите на карте ваш район.</p><p>Для поиска или просмотра центров, доступных для лиц с ограниченными возможностями, нажмите ниже кнопку «Доступные»; чтобы вернуться к просмотру всех центров, нажмите кнопку «Все центры».</p><p>Для поиска или просмотра центров, где разрешены домашние животные, нажмите ниже кнопку «Можно дом. жив.»; чтобы вернуться к просмотру всех центров, нажмите кнопку «Все центры».</p><p><strong>ПРИМЕЧАНИЕ:</strong> Проверяйте этот сайт ежедневно. Часы работы центров охлаждения могут измениться.</p><p><a href="http://www1.nyc.gov/site/em/ready/extreme-heat.page" target="_blank">Узнайте о том, как избежать перегревания.</a></p>',
 	acc_all: "Все центры",
 	acc_only: "Доступные",
 	btn_legend: 'Легенда',
@@ -366,7 +366,7 @@ messages.es = {
 messages.ur = {
 	cc_title: "کولنگ سینٹر  تلاش کرنے کا ذریعہ",
 	btn_cooling_centers: 'کولنگ سینٹر (ٹھنڈا رہنے کے مراکز)',
-	panel_note: '<p>نیو یارک شہر گرمی کی شدت سے جسمانی تکلیف کا سامنا کرنے والے افراد کے لئے ایئر کنڈیشنڈ والی عوامی عمارتوں میں کولنگ سینٹر کھلے ہیں۔</p><p>کولنگ سینٹر کو تلاش کرنے کے لئے نقشے کے اوپربائیں کونے پر تلاش کے خانے میں اپنا ایڈریس لکھیں اور پھر "Enter" دبائیں؛ یا نقشہ کو اپنا علاقہ دیکھنے کے لئے بڑا اور قریب کریں۔</p><p>قابل رسائی والے مراکز تلاش کرنے یا دیکھنے کے لئے نیچے معذور کیلئے والے بٹن پر کلک کریں؛ تمام مراکز کو دوبارہ تلاش کرنے اور دیکھنےکیلئے "تمام مراکز" پر کلک کریں۔</p><p>پالتو جانوروں کے ہمراہ داخلے والے مراکز کیلئے نیچے پالتو جانوروں کے ہمراہ داخلے کی اجازت والے بٹن پر کلک کریں ؛ تمام مراکز کو دوبارہ تلاش کرنے اور دیکھنےکیلئے "تمام مراکز" پر کلک کریں</p><p><b>نوٹ:</b>براہ مہربانی اس سائٹ کو روزانہ ملاحظہ کریں۔ کولنگ سینٹر اوقات کار تبدیل کر سکتے ہیں۔</p><p><a href="http://www1.nyc.gov/site/em/ready/extreme-heat.page" target="_blank">ٹھنڈا رہنے کے طریقوں کے بارے میں مزید معلومات حاصل کریں۔</a></p>',
+	panel_note: '<p>نیو یارک شہر گرمی کی شدت سے جسمانی تکلیف کا سامنا کرنے والے افراد کے لئے ایئر کنڈیشنڈ والی عوامی عمارتوں میں کولنگ سینٹر کھلے ہیں۔</p><p>کولنگ سینٹر کو تلاش کرنے کے لئے نقشے کے اوپربائیں کونے پر تلاش کے خانے میں اپنا ایڈریس لکھیں اور پھر "Enter" دبائیں؛ یا نقشہ کو اپنا علاقہ دیکھنے کے لئے بڑا اور قریب کریں۔</p><p>"قابل رسائی" والے مراکز تلاش کرنے یا دیکھنے کے لئے نیچے معذور کیلئے والے بٹن پر کلک کریں؛ تمام مراکز کو دوبارہ تلاش کرنے اور دیکھنےکیلئے "تمام مراکز" پر کلک کریں۔ </p><p>پالتو جانوروں کے ہمراہ داخلے والے مراکز کیلئے نیچے "پالتو جانوروں کے داخلے" والے بٹن پر کلک کریں؛ تمام مراکز کو دوبارہ تلاش کرنے اور دیکھنےکیلئے "تمام مراکز" پر کلک کریں۔</p><p><a href="http://www1.nyc.gov/site/em/ready/extreme-heat.page" target="_blank">ٹھنڈا رہنے کے طریقوں کے بارے میں مزید معلومات حاصل کریں۔</a></p>',
 	acc_all: "تمام مراکز",
 	acc_only: "قابل رسائی",
 	btn_legend: 'علامات',
@@ -383,7 +383,7 @@ messages.ur = {
 	pop_hours: "اوقات",
 	pop_extended: "توسیع شدہ اوقات",
 	pop_access: "وہیل چیئر قابل رسائی",
-	pop_pet: "پالتو جانوروں کے داخلے کی اجازت ہے",
+	pop_pet: "پالتو جانوروں کے داخلے",
 	day: "دن",
 	opens: "کھولو",
 	closes: "بند",
