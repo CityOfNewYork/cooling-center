@@ -1,3 +1,6 @@
+.translated-rtl .desc *, .translated-rtl .dtl * {
+  direction: rtl;
+}
 .desc {
   padding: 10px 5px 10px 5px; 
   text-align: left;
