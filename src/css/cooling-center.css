@@ -1,6 +1,6 @@
-.translated-rtl .desc *, .translated-rtl .dtl * {
-  direction: rtl;
-}
+@import "nyc-ol-lib.css";
+@import "ol.finderapp.css";
+@import "rtl.ol.finderapp.css";
 .desc {
   padding: 10px 5px 10px 5px; 
   text-align: left;
@@ -86,20 +86,41 @@
 .panel_note {
   margin-top: 15px;
 }
-.tog .HANDICAP_ACCESS-1 label {
-  background-image: url(../img/access1.svg);
-  background-size: 25px;
-  background-repeat: no-repeat;
-  background-position: 3px 5px;
-  padding-left: 30px;
-}
 
-.tog .PET_FRIENDLY-1 label {
-  background-image: url(../img/pet.png);
-  background-size: 25px;
+.filter-chc-1,
+.filter-chc-2  {
+  margin: 3px;
+  width: calc(100% - 10px);
+  background-color: var(--color-dark);
+  border: 1px solid var(--color-dark);
+}
+.HANDICAP_ACCESS,
+.PET_FRIENDLY {
+  background-color: var(--color-dark);
+}
+.HANDICAP_ACCESS:hover,
+.PET_FRIENDLY:hover {
+  background-color: var(--color-light);
+}
+.HANDICAP_ACCESS label,
+.PET_FRIENDLY label {
+  background-image: url(../img/access1.svg);
+  background-size: 17px;
   background-repeat: no-repeat;
-  background-position: 3px 5px;
+  background-position: 0;
   padding-left: 30px;
+  color: var(--color-light);
+}
+.HANDICAP_ACCESS:hover label,
+.PET_FRIENDLY:hover label {
+color: var(--color-dark);
+}
+.PET_FRIENDLY label {
+  background-size: 23px;
+  background-image: url(../img/pet2.png);
+}
+.PET_FRIENDLY:hover label {
+  background-image: url(../img/pet.png);
 }
 
 .tog .PET_FRIENDLY-1 input:checked+label {

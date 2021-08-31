@@ -437,7 +437,7 @@ describe('addLangClasses', () => {
     target.remove()
   })
   test('addLangClasses', () => {
-    expect.assertions(3)
+    expect.assertions(2)
 
     const app = new App(mockContent) 
 
@@ -451,10 +451,10 @@ describe('addLangClasses', () => {
     const acc_labels = acc_filter.find('label')
     const pet_labels = pet_filter.find('label')
 
-    expect($(acc_labels[1]).hasClass('acc_only')).toBe(true)
-    expect($(acc_labels[0]).hasClass('acc_all')).toBe(true)
+    expect($(acc_labels[0]).hasClass('acc_only')).toBe(true)
+    // expect($(acc_labels[0]).hasClass('acc_all')).toBe(true)
     
-    expect($(pet_labels[1]).hasClass('pop_pet')).toBe(true)
+    expect($(pet_labels[0]).hasClass('pop_pet')).toBe(true)
 
 
     

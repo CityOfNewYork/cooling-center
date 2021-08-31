@@ -69,17 +69,17 @@ class App extends FinderApp {
         },
         {
           title: 'Wheelchair Accessible',
-          toggle: true,
+          // toggle: true,
           choices: [
-            {name: 'HANDICAP_ACCESS', values: ['Yes', 'No'], label: 'All Centers', checked: true},
+            // {name: 'HANDICAP_ACCESS', values: ['Yes', 'No'], label: 'All Centers', checked: true},
             {name: 'HANDICAP_ACCESS', values: ['Yes'], label: 'Accessible'}
           ]
         },
         {
           title: 'Pet Friendly',
-          toggle: true,
+          // toggle: true,
           choices: [
-            {name: 'PET_FRIENDLY', values: ['Yes', 'No'], label: 'All Centers', checked: true},
+            // {name: 'PET_FRIENDLY', values: ['Yes', 'No'], label: 'All Centers', checked: true},
             {name: 'PET_FRIENDLY', values: ['Yes'], label: 'Pet Friendly'}
           ]
         }
@@ -105,11 +105,11 @@ class App extends FinderApp {
   }
   addLangClasses() {
     const acc_labels = this.filters.choiceControls[1].find('label')
-    $(acc_labels[0]).addClass('acc_all')
-    $(acc_labels[1]).addClass('acc_only')
+    //$(acc_labels[0]).addClass('acc_all')
+    $(acc_labels[0]).addClass('acc_only')
     const pet_labels = this.filters.choiceControls[2].find('label')
-    $(pet_labels[0]).addClass('acc_all')
-    $(pet_labels[1]).addClass('pop_pet')
+    //$(pet_labels[0]).addClass('acc_all')
+    $(pet_labels[0]).addClass('pop_pet')
   }
   translateBtn() {
     return new Translate({
