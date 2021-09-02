@@ -25,7 +25,7 @@
   "dependencies": {
     "jquery": "^3.3.2",
     "nyc-build-helper": "^0.0.40",
-    "nyc-lib": "^1.4.48",
+    "nyc-lib": "../nyc-lib/dist",
     "ol": "^6.5.0",
     "papaparse": "^5.3.0",
     "proj4": "^2.4.4"

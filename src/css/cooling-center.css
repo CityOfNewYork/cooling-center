@@ -12,27 +12,12 @@
 .fnd .facility a.phone {
   width: calc(100% - 35px);
 }
-/* .facility .ico, #filters .ico {
-  float: left;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  margin-right: 3px;
-} */
-
-.facility .ico, #filters .ico {
-  float: left;
-  border-radius: 50%;
-}
 .facility .ico {
+  float: left;
   width: 18px;
   height: 18px;
+  border-radius: 50%;
   margin-right: 3px;
-}
-#filters .ico {
-  margin: 8px 3px 10px 3px;
-  width: 12px;
-  height: 12px;
 }
 .translated-rtl .dtl ul {
   margin: 5px;
@@ -41,11 +26,11 @@
   float: right;
   margin-left: 3px;
 }
-.translated-rtl #filters .ico {
-  margin: 8px 5px 10px 5px;
-  float: right;
+.translated-rtl .HANDICAP_ACCESS label,
+.translated-rtl .PET_FRIENDLY label {
+  background-position: right;
+  padding-right: 30px;
 }
-
 .fnd #banner, .fnd #banner * {
   color: #FBED30;
 }
@@ -104,8 +89,7 @@
 }
 .HANDICAP_ACCESS label,
 .PET_FRIENDLY label {
-  background-image: url(../img/access1.svg);
-  background-size: 17px;
+  background-size: 20px;
   background-repeat: no-repeat;
   background-position: 0;
   padding-left: 30px;
@@ -115,6 +99,9 @@
 .PET_FRIENDLY:hover label {
 color: var(--color-dark);
 }
+.HANDICAP_ACCESS label {
+  background-image: url(../img/access1.svg);
+}
 .PET_FRIENDLY label {
   background-size: 23px;
   background-image: url(../img/pet2.png);
@@ -122,44 +109,45 @@ color: var(--color-dark);
 .PET_FRIENDLY:hover label {
   background-image: url(../img/pet.png);
 }
-
-.tog .PET_FRIENDLY-1 input:checked+label {
-  background-image: url(../img/pet2.png);
-
-}
-
 .translated-rtl .pop>.content .name {
   padding-right: initial;
 }
-.ico.chc-community-center {
+.ico div {
+  border-radius: 50%;
+}
+div.ico.chc-community-center,
+.ico.chc-community-center div {
   background-color: var(--community-center);
 }
-.ico.chc-senior-center {
+div.ico.chc-senior-center,
+.ico.chc-senior-center div {
   background-color: var(--senior-center);
 }
-.ico.chc-school {
+div.ico.chc-school,
+.ico.chc-school div {
   background-color: var(--school);
 }
-.ico.chc-cornerstone-program {
+div.ico.chc-cornerstone-program,
+.ico.chc-cornerstone-program div {
   background-color: var(--cornerstone-program);
 }
-.ico.chc-library {
+div.ico.chc-library,
+.ico.chc-library div {
   background-color: var(--library);
 }
-.ico.chc-other {
+div.ico.chc-other,
+.ico.chc-other div {
   background-color: var(--other);
 }
-.ico.chc-default {
+div.ico.chc-default,
+.ico.chc-default div {
   background-color: var(--default);
 }
-.ico.accessible {
+div.ico.accessible {
   background-image: var(--accessibility-icon);
   background-size: 14px;
   background-repeat: no-repeat;
   background-position: center;
-}
-.chc-chc .ico {
-  border-radius: 50%;
 }
 .splash a.btn.rad-all.btn-no {
   height: 43px;
