@@ -12,7 +12,7 @@ const messages = {}
 messages.en = {
 	cc_title: "Cooling Center Finder",
 	btn_cooling_centers: "Cooling Centers",
-	panel_note: '<p>New York City opens cooling centers in air-conditioned public facilities for those who experience physical discomfort in a heat wave.</p><p>To find a cooling center, simply type your address or intersection into the search field on the upper-left corner of the map and then hit “Enter”; or zoom and pan the map to your neighborhood location.</p><p>To search or view accessible centers, click the Accessible button below; click All Centers to switch back to all centers.</p><p>To search or view pet friendly centers, click the Pets Allowed button below; click All Centers to switch back to all centers.</p><p><b>NOTE:</b> Please check this site daily. Cooling centers may change hours of operation.</p><p><a href="https://www1.nyc.gov/site/em/ready/extreme-heat.page">Learn more about ways to stay cool.</a></p>',
+	panel_note: '<p>New York City opens cooling centers in air-conditioned public facilities for those who experience physical discomfort in a heat wave.</p><p>To find a cooling center, simply type your address or intersection into the search field on the upper-left corner of the map and then hit “Enter”; or zoom and pan the map to your neighborhood location.</p><p>To search or view accessible centers, click the Accessible button below.</p><p>To search or view pet friendly centers, click the Pets Allowed button below.</p><p><b>NOTE:</b> Please check this site daily. Cooling centers may change hours of operation.</p><p><a href="https://www1.nyc.gov/site/em/ready/extreme-heat.page">Learn more about ways to stay cool.</a></p>',
 	//acc_all: "All Centers",
 	acc_only: "Accessible",
 	btn_legend: "Legend",
