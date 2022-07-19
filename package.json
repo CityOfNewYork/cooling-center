@@ -23,11 +23,11 @@
   },
   "homepage": "https://github.com/CityOfNewYork/cooling-center#readme",
   "dependencies": {
-    "jquery": "^3.3.1",
+    "jquery": "^3.6.0",
     "nyc-lib": "^1.4.68",
     "ol": "^6.5.0",
-    "papaparse": "^5.3.0",
-    "proj4": "^2.4.4"
+    "papaparse": "^5.3.2",
+    "proj4": "^2.8.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
